@@ -1,0 +1,21 @@
+{
+  "name": "Lumos",
+  "description": "A Plugin for midjourney",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "permissions":["storage"],
+  "action":{
+    "default_popup":"index.html",
+    "default_icon": {
+        "16": "/icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["static/js/main.6ec16bf2.js"],
+      
+      "run_at": "document_end"
+    }
+  ]
+}
