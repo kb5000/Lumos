@@ -1,0 +1,35 @@
+name: NPM Audit Fix
+
+on:
+  schedule:
+    # 每月运行一次
+    - cron: '0 6 17 * *'
+
+jobs:
+  audit-fix:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # 你可以选择你想要的 Node.js 版本
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run npm audit fix
+      run: npm audit fix
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        if git diff --staged; then
+           git commit -m "[Automated] npm audit fix"
+           git push
+        fi
