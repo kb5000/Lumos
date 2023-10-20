@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const AddTag = (draft, content) => {
     if (!HasTag(draft, content)) {
         draft.标签.push({ content: content, enabled: true });

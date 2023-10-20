@@ -1,10 +1,10 @@
-import { useEffect, useReducer, useState, useRef } from 'react';
+import React, { useEffect, useReducer, useState, useRef } from 'react';
 import { MJButton, MJNameDropList, MJDropButton, MJDropList, MJTextBox, MJMetaBox, MJCircleButton } from '../components/Components';
 import { Box, containerClasses } from '@mui/material';
 import { auto } from '@popperjs/core';
 import { Stack } from "@mui/system";
 import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
-import { InputButtom } from '../components/InputButtom.js';
+import { InputButtom } from '../components/InputButtom.jsx';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import EditIcon from '@mui/icons-material/Edit';

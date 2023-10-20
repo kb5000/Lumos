@@ -18,7 +18,7 @@ import TextFormatIcon from "@mui/icons-material/TextFormat";
 import BorderColorIcon from "@mui/icons-material/BorderColor";
 import { MJDraft } from "./DraftPage";
 import { API_KEY, AppContext, BASE_URI } from "../App";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { MJConcept } from "./ConceptPage";
 import { AddTag, AddVarTag, GetVarTagValue, RemoveTag, RemoveVarTag } from "../schema/model";
 import axios from "axios";

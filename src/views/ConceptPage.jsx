@@ -1,7 +1,7 @@
 import { Box, Stack } from '@mui/material';
 import { MJDropButton, MJPageSelectButton } from '../components/Components';
 import { auto } from '@popperjs/core';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { AppContext } from '../App';
 import { AddTag, HasTag, RemoveTag } from '../schema/model';
 

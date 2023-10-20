@@ -1,6 +1,6 @@
 import { Box, Stack } from "@mui/material";
 import { AppContext } from "../App";
-import { useContext } from "react";
+import React, { useContext } from "react";
 
 export const MJSelect = (props) => {
   const [model, chgModel] = useContext(AppContext);

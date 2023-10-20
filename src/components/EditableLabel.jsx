@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { useEffect, useReducer, useState, useRef } from 'react';
+import React, { useEffect, useReducer, useState, useRef } from 'react';
 import FormControl, { useFormControl } from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Box from '@mui/material/Box';

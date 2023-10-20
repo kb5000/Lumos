@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState, useRef } from 'react';
+import React, { useEffect, useReducer, useState, useRef } from 'react';
 import { Box } from '@mui/material';
 import {EditableLabel} from "./EditableLabel"
 

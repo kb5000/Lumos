@@ -18,7 +18,7 @@ import TextFormatIcon from "@mui/icons-material/TextFormat";
 import BorderColorIcon from "@mui/icons-material/BorderColor";
 import { MJDraft } from "./DraftPage";
 import { AppContext } from "../App";
-import { useContext, useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { MJConcept } from "./ConceptPage";
 import { AddTag, ProcessSentence } from "../schema/model";
 import { MainSubpage } from "./MainSubpage";

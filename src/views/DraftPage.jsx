@@ -4,7 +4,7 @@ import {
   MJPageSelectButton
 } from "../components/Components";
 import { auto } from "@popperjs/core";
-import { useContext, useMemo } from "react";
+import React, { useContext, useMemo } from "react";
 import { AppContext } from "../App";
 import { AddTag, HasTag, RemoveTag } from "../schema/model";
 
