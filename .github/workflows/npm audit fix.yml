@@ -4,6 +4,7 @@ on:
   schedule:
     # 每月运行一次
     - cron: '0 6 17 * *'
+  workflow_dispatch:
 
 jobs:
   audit-fix:
